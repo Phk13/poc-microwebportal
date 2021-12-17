@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package microgrpc;
+
+option go_package = "github.com/phk13/poc-micro/communicationlayer/microgrpc";
+
+message animal {
+    int32 id = 1;
+    string animal_type = 2;
+    string nickname = 3;
+    int32 zone = 4;
+    int32 age = 5;
+}
+
+message request {
+    string nickname = 1;
+}
+
+service MicroService {
+    rpc GetAnimal(request) returns (animal);
+    rpc GetAllAnimals(request) returns (stream animal);
+}

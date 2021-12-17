@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package microproto3;
+
+option go_package = "github.com/phk13/poc-micro/communicationlayer/microproto3";
+
+message animal {
+    int32 id = 1;
+    string animal_type = 2;
+    string nickname = 3;
+    int32 zone = 4;
+    int32 age = 5;
+}

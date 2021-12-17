@@ -1,0 +1,7 @@
+{
+    "webserver": "localhost:8181",
+    "databasetype": 2,
+    "dbconnection": "mongodb://",
+    "frontend": "./webportal/template",
+    "secret": "secret"
+}
